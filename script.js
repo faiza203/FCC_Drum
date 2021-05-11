@@ -216,6 +216,7 @@ function soundBtn(e) {
   if (power === "right") {
     e.classList.add("right");
     const music = e.children[0];
+    music.volume = JSON.parse(range.value / 100);
     music.play();
     dis.innerHTML = e.id;
   }
