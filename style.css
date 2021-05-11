@@ -183,3 +183,14 @@ body {
 [type="range"]:focus::-ms-fill-upper {
   background: #4f4f4f;
 }
+
+.drum-pad.right {
+  background-color: orange !important;
+  box-shadow: orange 0px 3px 5px !important;
+}
+.drum-pad.left {
+  margin-top: 16px !important;
+  height: 74px !important;
+  width: 95px !important;
+  margin-left: 5px !important;
+}

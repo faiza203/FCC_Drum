@@ -22,17 +22,34 @@
         <div class="control">
           <p>Power</p>
           <div class="select">
-            <div class="inner" style="float: right"></div>
+            <div
+              class="inner"
+              style="float: right"
+              id="power"
+              onclick="changePower()"
+            ></div>
           </div>
         </div>
-        <p id="display">Clap</p>
+        <p id="display">&nbsp;</p>
         <div class="volume-slider">
-          <input type="range" step="0.01" min="0" max="1" value="0.3" />
+          <input
+            id="range"
+            type="range"
+            step="0.01"
+            min="0"
+            max="100"
+            value="30"
+          />
         </div>
         <div class="control">
           <p>Bank</p>
           <div class="select">
-            <div class="inner" style="float: left"></div>
+            <div
+              class="inner"
+              style="float: left"
+              id="bank"
+              onclick="changeBank()"
+            ></div>
           </div>
         </div>
       </div>
