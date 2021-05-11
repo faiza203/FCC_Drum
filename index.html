@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>FCC Drum</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="container" id="drum-machine">
+      <div class="pad-bank"></div>
+      <div class="logo">
+        <div class="inner-logo">FCC</div>
+        <i class="inner-logo fa fa-free-code-camp"></i>
+      </div>
+      <div class="controls-container">
+        <div class="control">
+          <p>Power</p>
+          <div class="select">
+            <div class="inner" style="float: right"></div>
+          </div>
+        </div>
+        <p id="display">Clap</p>
+        <div class="volume-slider">
+          <input type="range" step="0.01" min="0" max="1" value="0.3" />
+        </div>
+        <div class="control">
+          <p>Bank</p>
+          <div class="select">
+            <div class="inner" style="float: left"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>
